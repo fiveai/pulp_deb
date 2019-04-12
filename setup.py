@@ -9,7 +9,7 @@ requirements = [
 
 setup(
     name='pulp-deb',
-    version='2.0.0a1.dev1',
+    version='2.0.0a1.fiveai',
     description='pulp-deb plugin for the Pulp Project',
     license='GPLv2+',
     author='Matthias Dellweg',
@@ -18,7 +18,7 @@ setup(
     python_requires='>=3.6',
     install_requires=requirements,
     include_package_data=True,
-    packages=['pulp_deb', 'pulp_deb.app'],
+    packages=['pulp_deb', 'pulp_deb.app', 'pulp_deb.app.tasks', 'pulp_deb.app.migrations'],
     classifiers=(
         'License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)',
         'Operating System :: POSIX :: Linux',
